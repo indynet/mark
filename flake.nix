@@ -65,7 +65,7 @@
           then g "<${name} ${attrs attr}>"
           else g "<${name}>";
 
-      html = {
+      basic = {
         footer = tag "footer";
         header = tag "header";
         tbody  = tag "tbody";

@@ -82,6 +82,7 @@
         div    = tag "div";
         img    = tag "img";
         doc    = one "!DOCTYPE html" {};
+        br     = scl "br";
         h1     = tag "h1";
         h2     = tag "h2";
         h3     = tag "h3";

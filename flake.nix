@@ -80,7 +80,7 @@
         main   = tag "main";
         html   = tag "html";
         div    = tag "div";
-        img    = tag "img";
+        img    = scl "img";
         doc    = one "!DOCTYPE html" {};
         br     = scl "br";
         h1     = tag "h1";

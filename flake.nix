@@ -97,18 +97,5 @@
         i      = tag "i";
         a      = tag "a";
       };
-
-      packages.${system}.default =
-        let
-          text = with monad; (tell "a");
-        in stdenv.mkDerivation {
-          name         = "test";
-          src          = self;
-
-          installPhase = ''
-              mkdir -p $out
-              echo "${(text 0).write}" > $out/text.txt
-          '';
-        };
     };
 }

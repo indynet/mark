@@ -46,7 +46,7 @@
         let
           f = x: ''${x}=\"${attr.${x}}\"'';
           g = map f (attrNames attr);
-          h = concatStringSep " " g;
+          h = concatStringsSep " " g;
         in h;
 
       one   = name: attr: m:

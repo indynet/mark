@@ -34,6 +34,7 @@
                 listen = m: lift (writer.listen m);
                 tell   = w: lift (writer.tell w);
                 pass   = m: lift (writer.pass m);
+                eff    = l: do (map (x: _: x) l);
                 and    = m: m': bind m (_: m');
                 liftA  = f: m: writer.liftA f;
                 pure   = x: _: writer.pure x;

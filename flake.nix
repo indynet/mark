@@ -54,7 +54,7 @@
         then monad.and (monad.tell "<${name} ${attrs attr}>") m
         else monad.and (monad.tell "<${name}>") m;
 
-      scl   = name: attr: one name attr (pure null);
+      scl   = name: attr: one name attr (monad.pure null);
 
       tag   = name: attr: m:
         let
